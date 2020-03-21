@@ -19,7 +19,7 @@ void pinta(const Lista<T>& lista) {
 // EJERCICIO 21
 // Implementa un subprograma que reciba una lista de enteros 
 // y cuente cuántas posiciones hay en ella tales que el elemento que hay 
-// en esa posición es igual a la suma de todos sus precedentes
+// en esa posición es igual a la suma de todos sus precedentes 
 int numPicos(const Lista<int>& lista){
 	int suma = 0;
 	int cont = 0;
