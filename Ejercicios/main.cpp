@@ -34,6 +34,17 @@ int numPicos(const Lista<int>& lista){
 	return cont;
 }
 
+// EJERICIO 22
+// Implementa  un  subprograma  que  reciba  una  lista  de 
+// enteros  y  multiplique  por  dos todos sus elementos.
+void multiplica2(Lista<int> &lista){
+	Lista<int>::Iterator it = lista.begin();  
+	while (it != lista.end()) {
+		lista.insertar(it.elem()*2,it);
+		it = lista.eliminar(it);
+	}
+}
+
 // EJERCICIO 23
 // función que duplica los elementos de una lista de enteros
 // si la lista es [1,2,3] la transforma en [1,1,2,2,3,3] 
@@ -222,11 +233,47 @@ void mainEj24y25(){
 	cout << endl;
 }
 
+void mainEj22(){
+	// listas para las pruebas
+	Lista<int> listaVacia, lista1, lista2, lo1, lo2;
+
+	for (int i = 1; i <= 6; i++) 
+		for (int repeticiones = 1; repeticiones <=2; repeticiones++)
+			lista1.pon_final(i);
+		
+	for (int i = 2; i <= 6; i = i + 2)
+		lista2.pon_ppio(i);
+
+	cout << "\n\n--- EJ22: MULTIPLICAR POR DOS UNA LISTA ---\n";
+	
+	cout << "Cuando multiplico los numeros pares de la lista vacia\n";
+	pinta(listaVacia);
+	cout << "Resulta\n";
+	multiplica2(listaVacia);
+	pinta(listaVacia);
+	cout << endl;
+
+	cout << "Cuando multiplico los numeros pares de la lista\n";
+	pinta(lista1);
+	cout << "Resulta\n";
+	multiplica2(lista1);
+	pinta(lista1);
+	cout << endl;
+
+	cout << "Cuando multiplico los numeros pares de la lista\n";
+	pinta(lista2);
+	cout << "Resulta\n";
+	multiplica2(lista2);
+	pinta(lista2);
+	cout << endl;
+
+}
 
 int main() {
 	
 	mainEj21y23();
 	mainEj24y25();
+	mainEj22();
 	
 	return 0;
 }
