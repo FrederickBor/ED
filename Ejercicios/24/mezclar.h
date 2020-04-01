@@ -21,18 +21,15 @@ Lista<int> mezclar(const Lista<int>& l1, const Lista<int>& l2){
 		}
 	}
 
-	if (it1 == l1.cend()){
-		while (it2 != l2.cend()){
-			lista.pon_final(it2.elem());
-			it2.next();
-		}
-	}
-	else{
-		while (it1 != l1.cend()){
-			lista.pon_final(it1.elem());
-			it1.next();
-		}
+	while (it1 != l1.cend()){
+		lista.pon_final(it1.elem());
+		it1.next();
 	}
 
+	while (it2 != l2.cend()){
+		lista.pon_final(it2.elem());
+		it2.next();
+	}
+	
 	return lista;
 }
