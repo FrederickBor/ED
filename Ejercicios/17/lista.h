@@ -131,7 +131,7 @@ public:
 	// EXTENSIÓN PARA RESOLVER EL EJERCICIO 17
 	//
 	// para intentar conseguir O(1) puedes cambiar, si lo necesitas, el prototipo de la operaci�n
-	/*
+	
 	void concatena(const Lista<T>& lista) {
 		Nodo *act = lista._prim;
 		while (act != NULL) {
@@ -139,21 +139,28 @@ public:
 			act = act->_sig;
 		}
 	}
-	*/
+	
 	// Solucion constante
-	void concatena(const Lista<T>& lista) {
+	// La lista argumentos cede sus nodos a la otra
+	
+	void concatenaConst(Lista<T>& lista) {
 		if (lista.esVacia()) return;
-		else if (esVacia()){
+		
+		if (esVacia()){
 			_prim = lista._prim;
 			_ult = lista._ult;
 			_numElems = lista._numElems;
 		}
 		else{
 			_ult->_sig = lista._prim;
-			_ult->_sig->_ant = _ult;
+			lista._prim->_ant = _ult;
 			_ult = lista._ult;
 			_numElems += lista._numElems;
 		}
+		
+		lista._prim = NULL;
+		lista._ult = NULL;
+		lista._numElems = 0;
 	}
 
 	//
