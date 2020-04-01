@@ -132,7 +132,8 @@ public:
 	//
 
 	void insertarPorPosicion(const T &elem, int pos){
-		if (pos > _numElems) return;
+		if ((pos < 0) || (pos > _numElems)) throw EAccesoInvalido;
+		
 		if (pos == 0){
 			pon_ppio(elem);
 		}
