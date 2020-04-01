@@ -6,7 +6,7 @@
 void multiplicaPor2(Lista<int> &lista){
 	Lista<int>::Iterator it = lista.begin();  
 	while (it != lista.end()) {
-		lista.insertar(it.elem()*2,it);
-		it = lista.eliminar(it);
+		it.set(it.elem()*2);
+		it.next();
 	}
 }
