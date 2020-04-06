@@ -1,4 +1,4 @@
-#include "../TADs/lista.h"
+#include "../../TADs/lista.h"
 
 // EJERCICIO 25
 // subprograma que elimina los números pares de una lista de enteros

@@ -1,4 +1,4 @@
-#include "../TADs/lista.h"
+#include "../../TADs/lista.h"
 
 // EJERICIO 22
 // Implementa  un  subprograma  que  reciba  una  lista  de 

@@ -1,4 +1,4 @@
-#include "../TADs/lista.h"
+#include "../../TADs/lista.h"
 
 // EJERCICIO 21
 // Implementa un subprograma que reciba una lista de enteros 

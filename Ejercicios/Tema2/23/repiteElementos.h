@@ -1,4 +1,4 @@
-#include "../TADs/lista.h"
+#include "../../TADs/lista.h"
 
 // EJERCICIO 23
 // función que duplica los elementos de una lista de enteros

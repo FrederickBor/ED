@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../TADs/pila.h"
+#include "../../TADs/pila.h"
 using namespace std;
 
 bool esEquilibrada(const string &cadena)

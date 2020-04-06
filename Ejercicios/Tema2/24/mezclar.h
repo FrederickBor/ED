@@ -1,4 +1,4 @@
-#include "../TADs/lista.h"
+#include "../../TADs/lista.h"
 
 // EJERCICIO 24
 // subprograma que reciba dos listas de enteros ordenados crecientemente 

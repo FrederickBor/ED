@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../TADs/pila.h"
+#include "../../TADs/pila.h"
 #include <ctype.h>
 using namespace std;
 

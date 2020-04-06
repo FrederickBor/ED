@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../TADs/lista.h"
+#include "../../TADs/lista.h"
 
 using namespace std;
 
