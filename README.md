@@ -17,6 +17,10 @@ las hojas de ejercicios.
 Esta carpeta contiene una carpeta por cada prueba de 
 laboratorio realizada.
 
+# Autor.
+
+[Frederick Ernesto Borges Noronha](https://github.com/FrederickBor)
+
 # Licencia.
 
 El codigo presente en este repositio se encuentra bajo 
