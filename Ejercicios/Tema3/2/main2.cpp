@@ -1,4 +1,4 @@
-#include "Arbin.h"
+#include "../../TADs/Arbin.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -63,7 +63,7 @@ int numNodos(const Arbin<int>& a) {
 	int numNodosIzq = numNodos(a.hijoIz());
 	int numNodosDer = numNodos(a.hijoDer());
 
-	return numNodosIzq + numNodosDer;
+	return 1 + numNodosIzq + numNodosDer;
 }
 
 // esHoja: devuelve cierto si el arbol es una hoja (los hijos izquierdo y derecho son vacios).
@@ -75,15 +75,13 @@ bool esHoja(const Arbin<int>& a) {
 // numHojas: devuelve el numero de hojas del arbol.
 int numHojas(const Arbin<int>& a) {
 	if (a.esVacio()) return 0;
-	if (esHoja(a)) return 1;
-	return numHojas(a.hijoIz()) + numHojas(a.hijoDer());
+	return 1 + numHojas(a.hijoIz()) + numHojas(a.hijoDer());
 }
 
 //talla: devuelve la talla del arbol.
 int talla(const Arbin<int>& a) {
 	if (a.esVacio()) return 0;
-	if (esHoja(a)) return 1;
-	return max(talla(a.hijoIz()), talla(a.hijoDer())) + 1;
+	return 1 + max(talla(a.hijoIz()), talla(a.hijoDer())) + 1;
 }
 
 //frontera: devuelve una lista con todas las hojas del arbol de izquierda a derecha.
@@ -111,8 +109,6 @@ Lista<int> frontera(const Arbin<int>& a) {
 //espejo: devuelve un arbol nuevo que es la imagen especular del recibido
 Arbin<int> espejo(const Arbin<int>& a) {
 	if (a.esVacio()) return a;
-	if (esHoja(a)) return a;
-
 	return Arbin<int>(espejo(a.hijoDer()), a.raiz(), espejo(a.hijoIz()));
 }
 

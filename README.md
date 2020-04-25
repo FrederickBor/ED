@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 # Acerca de este repositorio.
 
 Este repositorio contiene los ejercicios realizados para 
@@ -19,7 +21,7 @@ laboratorio realizada.
 
 # Autor.
 
-[Frederick Ernesto Borges Noronha](https://github.com/FrederickBor)
+Frederick Ernesto Borges Noronha &nbsp; [![GitHub followers](https://img.shields.io/github/followers/FrederickBor?label=%40FrederickBor&style=social)](https://github.com/FrederickBor)
 
 # Licencia.
 
