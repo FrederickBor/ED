@@ -25,7 +25,8 @@ unsigned int auxNumHojasMasProfundasQue(const Arbin<int>& a, unsigned int k, int
 /**
   COMPLEJIDAD: Explica aquí justificadamente cuál es la complejidad de 
                esta función
-			   ***A COMPLETAR***
+			   La complejidad de la funcion creada es O(k) siendo k el numero de nodos totales del arbol,
+			   esto es así ya que se debe pasar una vez por cada nodo para obtener una solución.
 */
 unsigned int numero_hojas_mas_profundas_que(const Arbin<int>& a, unsigned int k) {
 	// A IMPLEMENTAR
