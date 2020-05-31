@@ -1,0 +1,25 @@
+nuevo 1234
+nuevo 1234
+consultar 1234
+consultar 1235
+nuevo 1235
+consultar 1235
+cuantos_con_puntos 15
+cuantos_con_puntos 8
+cuantos_con_puntos 16
+cuantos_con_puntos 15
+cuantos_con_puntos 14
+lista_por_puntos 15
+lista_por_puntos 16
+recuperar 1234 1
+cuantos_con_puntos 15
+lista_por_puntos 15
+quitar 1234 1
+cuantos_con_puntos 15
+cuantos_con_puntos 14
+lista_por_puntos 15
+lista_por_puntos 14
+recuperar 1234 10
+lista_por_puntos 15
+recuperar 1456 5
+quitar 1456 5
