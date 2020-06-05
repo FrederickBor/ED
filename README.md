@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/github/license/frederickbor/ED)](LICENSE)
+[![Build Status](https://travis-ci.com/FrederickBor/ED.svg?branch=master)](https://travis-ci.com/FrederickBor/ED)
 
 # Acerca de este repositorio.
 
