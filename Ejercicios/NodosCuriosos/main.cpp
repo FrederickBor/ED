@@ -39,6 +39,9 @@ int nodos_curiosos_aux(const Arbin<int> a, int nivel, int& nodos){
   COMPLEJIDAD: Explica aquí justificadamente cuál es la complejidad de 
                esta función
 			   ***A COMPLETAR***
+			   
+			   Implementar esta operación tiene coste O(n) 
+			   donde n es el numero de nodos del arbol.
 			  
 */
 int nodos_curiosos(const Arbin<int>& a) {
