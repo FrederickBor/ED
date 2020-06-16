@@ -49,7 +49,6 @@ int nodos_curiosos(const Arbin<int>& a) {
 	return nodos_curiosos_aux(a, 1, nodos);
 }
 
-
 Arbin<int> lee_arbol(istream& in) {
 	char c;
 	in >> c;
