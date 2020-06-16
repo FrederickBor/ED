@@ -31,7 +31,7 @@ int nodos_curiosos_aux(const Arbin<int> a, int nivel, int& nodos){
 	nodosCuriososDer = nodos_curiosos_aux(a.hijoDer(), nivel + 1, nodosDer);
 
 	nodos = nodosIzq + nodosDer + 1;
-	return nodosCuriososIzq + nodosCuriososDer + (nodosIzq == nivel);
+	return nodosCuriososIzq + nodosCuriososDer + (nodosIzq + nivel == a.raiz());
 
 }
 
