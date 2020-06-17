@@ -46,7 +46,10 @@ void mejor_renta_aux(Arbin<int> a, bool& es_rentable, int& renta_maxima, int sum
 
 void mejor_renta(Arbin<int> a, bool& es_rentable, int& renta_maxima) {
 	/* A IMPLEMENTAR */
-	if (a.esVacio()) return;
+	if (a.esVacio()){
+		es_rentable = false;
+		return;
+	}
 	es_rentable = true;
 	renta_maxima = 0;
 	mejor_renta_aux(a,es_rentable,renta_maxima, 0);	
