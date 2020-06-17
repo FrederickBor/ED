@@ -10,7 +10,7 @@ using namespace std;
 
 /*
 COMPLEJIDAD: Determina justificadamente la complejidad del procedimiento 
-
+Coste lineal.
 */
 bool es_hoja(const Arbin<int>& a){
 	return !a.esVacio() &&
