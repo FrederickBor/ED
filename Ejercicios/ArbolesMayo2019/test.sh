@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Executing Arbol Zurdo"
+echo "Executing Arboles Mayo 2019"
 
 g++ main.cpp -o a.out &&
 ./a.out < input.in > output.txt && 
-diff -u output.txt expectedOutput.txt
+diff -u -w output.txt expectedOutput.txt
 
 status=$?
 
