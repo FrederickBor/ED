@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Executing Examen 2"
+echo "Executing Nodos Adivinos"
 
 g++ main.cpp -o a.out &&
 ./a.out < input.in > output.txt && 

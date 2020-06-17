@@ -12,4 +12,4 @@ RED='\033[1;31m'
 GREEN='\033[1;32m'
 NC='\033[0m'
 
-[ $status -eq 0 ] && echo -e "${GREEN}OK!${NC}" && exit 0 || echo -e "${RED}FAILED!${NC}" && exit -1
+[ $status -eq 0 ] && echo -e "${GREEN}OK!${NC}" || echo -e "${RED}FAILED!${NC}"
