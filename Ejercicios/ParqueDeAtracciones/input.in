@@ -1,0 +1,14 @@
+an_atraccion globos_locos
+an_atraccion la_jungla
+an_ninio pepito
+an_ninio juanita
+poner_en_fila pepito la_jungla
+poner_en_fila juanita globos_locos
+avanzar la_jungla
+poner_en_fila pepito globos_locos
+avanzar globos_locos
+avanzar globos_locos
+atracciones_visitadas pepito
+atracciones_visitadas juanita
+numero_visitas pepito la_jungla
+numero_visitas juanita la_jungla
