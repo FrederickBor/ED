@@ -12,26 +12,32 @@ USUARIO DE DOMJUDGE USADO EN EL EXAMEN:
 Implementa aquí los métodos de las clases adicionales
 */
 
+// COSTE O(1)
 unsigned int Conductor::obtener_puntos() const{ return _puntos;};
 
+// COSTE O(1)
 void Conductor::sumar_puntos(unsigned int puntos){
 	if (_puntos + puntos > 15) _puntos = 15;
 	else _puntos += puntos;
 };
 
+// COSTE O(1)
 void Conductor::restar_puntos(unsigned int puntos){
 	if (_puntos - puntos < 0) _puntos = 0;
 	else _puntos -= puntos;	
 };
 
+// COSTE O(1)
 Posicion Conductor::obtener_posicion() const{
 	return _posicion;
 };
 
+// COSTE O(1)
 void Conductor::cambiar_posicion(const Posicion& posicion){
 	_posicion = posicion;
 };
 
+// COSTE O(n)
 CarnetPorPuntos::CarnetPorPuntos(){
 	for (int i=0; i<=14; i++){
 		listas_puntos.inserta(i+1, Lista<string>());
@@ -49,8 +55,8 @@ y justificar la complejidad de las mismas.
  Complejidad Constante ya que solo se busca si esta el nuevo conductor
  e insertar tambien tiene coste constante.
 */
+// COSTE O(1)
 void CarnetPorPuntos::nuevo(const string& dni) {
-	// A IMPLEMENTAR
 	DiccionarioHash<string, Conductor>::ConstIterator it = conductores.cbusca(dni);
 	if (it != conductores.cend()) throw EConductorDuplicado();
 
@@ -68,8 +74,8 @@ void CarnetPorPuntos::nuevo(const string& dni) {
  Complejidad constante ya que hemos guardado la posicion del 
  conductor como un atributo de la clase conductor.
 */
+// COSTE O(1)
 void CarnetPorPuntos::quitar(const string& dni, unsigned int puntos) {
-	// A IMPLEMENTAR
 	DiccionarioHash<string, Conductor>::Iterator it = conductores.busca(dni);
 	if (it == conductores.end()) throw EConductorNoExiste();
 
@@ -92,8 +98,8 @@ void CarnetPorPuntos::quitar(const string& dni, unsigned int puntos) {
  Complejidad constante ya que hemos guardado la posicion del 
  conductor como un atributo de la clase conductor.
 */
+// COSTE O(1)
 void CarnetPorPuntos::recuperar(const string& dni, unsigned int puntos) {
- 	// A IMPLEMENTAR
 	DiccionarioHash<string, Conductor>::Iterator it = conductores.busca(dni);
 	if (it == conductores.end()) throw EConductorNoExiste();
 
@@ -118,8 +124,8 @@ void CarnetPorPuntos::recuperar(const string& dni, unsigned int puntos) {
  coste constante y luego obtener un valor dentro de la clase 
  tambien es constante
 */
+// COSTE O(1)
 unsigned int CarnetPorPuntos::consultar(const string& dni) const {
-	// A IMPLEMENTAR
 	DiccionarioHash<string, Conductor>::ConstIterator it = conductores.cbusca(dni);
 	if (it == conductores.cend()) throw EConductorNoExiste();
 	return it.valor().obtener_puntos();
@@ -132,8 +138,8 @@ unsigned int CarnetPorPuntos::consultar(const string& dni) const {
  y solo se busca el valor en un DiccionarioHash y ademas obtener 
  la longitud en una lista es una operacion constante.
 */
+// COSTE O(1)
 unsigned int CarnetPorPuntos::cuantos_con_puntos(unsigned int puntos) const {
-	// A IMPLEMENTAR
 	if (puntos < 0 || puntos > 15) throw EPuntosNoValidos();
 	DiccionarioHash<int, Lista<string> >::ConstIterator it = listas_puntos.cbusca(puntos);
 	unsigned int ret = 0;
@@ -148,8 +154,8 @@ unsigned int CarnetPorPuntos::cuantos_con_puntos(unsigned int puntos) const {
  y solo se busca el valor en un DiccionarioHash
 
 */
+// COSTE O(1)
 const Lista<string>& CarnetPorPuntos::lista_por_puntos(unsigned int puntos) const {
-	// A IMPLEMENTAR
 	if (puntos < 0 || puntos > 15) throw EPuntosNoValidos();
 	DiccionarioHash<int, Lista<string> >::ConstIterator it = listas_puntos.cbusca(puntos);
 	return it.valor();
