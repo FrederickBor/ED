@@ -9,6 +9,7 @@ cuantos_con_puntos 8
 cuantos_con_puntos 16
 cuantos_con_puntos 15
 cuantos_con_puntos 14
+cuantos_con_puntos 0
 lista_por_puntos 15
 lista_por_puntos 16
 recuperar 1234 1
@@ -23,3 +24,81 @@ recuperar 1234 10
 lista_por_puntos 15
 recuperar 1456 5
 quitar 1456 5
+quitar 1234 15
+lista_por_puntos 10
+quitar 1234 1
+nuevo 4321
+quitar 4321 1
+quitar 4321 2
+quitar 4321 3
+quitar 4321 4
+quitar 4321 5
+quitar 4321 6
+quitar 4321 7
+quitar 4321 8
+quitar 4321 9
+quitar 4321 10
+quitar 4321 11
+quitar 4321 12
+quitar 4321 13
+quitar 4321 14
+quitar 4321 15
+recuperar 4321 15
+recuperar 4321 14
+recuperar 4321 13
+recuperar 4321 12
+recuperar 4321 11
+recuperar 4321 10
+recuperar 4321 9
+recuperar 4321 8
+recuperar 4321 7
+recuperar 4321 6
+recuperar 4321 5
+recuperar 4321 4
+recuperar 4321 3
+recuperar 4321 2
+recuperar 4321 1
+lista_por_puntos 0
+lista_por_puntos 1
+lista_por_puntos 2
+lista_por_puntos 3
+lista_por_puntos 4
+lista_por_puntos 5
+lista_por_puntos 6
+lista_por_puntos 7
+lista_por_puntos 8
+lista_por_puntos 9
+lista_por_puntos 10
+lista_por_puntos 11
+lista_por_puntos 12
+lista_por_puntos 13
+lista_por_puntos 14
+lista_por_puntos 15
+lista_por_puntos 16
+lista_por_puntos -1
+cuantos_con_puntos 15
+cuantos_con_puntos 14
+cuantos_con_puntos 13
+cuantos_con_puntos 12
+cuantos_con_puntos 11
+cuantos_con_puntos 10
+cuantos_con_puntos 9
+cuantos_con_puntos 8
+cuantos_con_puntos 7
+cuantos_con_puntos 6
+cuantos_con_puntos 5
+cuantos_con_puntos 4
+cuantos_con_puntos 3
+cuantos_con_puntos 2
+cuantos_con_puntos 1
+cuantos_con_puntos -1
+cuantos_con_puntos 16
+consultar 1235
+consultar 4321
+nuevo 4321
+nuevo 1234
+quitar aaaa 5
+recuperar aaaa 5
+consultar aaaa
+cuantos_con_puntos -1
+lista_por_puntos -1

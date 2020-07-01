@@ -1,0 +1,41 @@
+an_oferta ipub 5
+an_oferta ipub 4
+an_oferta xbos 0
+an_oferta xbos 1
+pon_en_espera jose ipub
+pon_en_espera juan ipub
+pon_en_espera lucas ipub
+pon_en_espera juan xbos
+pon_en_espera jose xbos
+pon_en_espera juan ipub
+pon_en_espera jose xbos
+lista_ventas
+primero_en_espera ipub
+primero_en_espera xbos
+num_en_espera ipub
+num_en_espera xbos
+cancela_espera juan ipub
+num_en_espera ipub
+primero_en_espera xbos
+venta ipub 3
+primero_en_espera ipub
+num_en_espera ipub
+venta ipub 10
+venta ipub 2
+venta ipub 1
+lista_ventas
+venta xbos 1
+venta xbos 1
+num_en_espera xbos
+num_en_espera ipub
+primero_en_espera xbos
+lista_ventas
+an_oferta ipub 2
+pon_en_espera jose ipub
+venta ipub 2
+lista_ventas
+pon_en_espera ana ipub
+pon_en_espera ana galasia
+primero_en_espera galasia
+num_en_espera galasia
+venta galasia 2

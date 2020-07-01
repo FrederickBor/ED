@@ -6,7 +6,8 @@ USUARIO DE DOMJUDGE USADO EN EL EXAMEN:
 */
 
 #include "CarnetPorPuntos.h"
-
+#include <iostream>
+using namespace std;
 
 /**
 Implementa aquí los métodos de las clases adicionales
@@ -23,7 +24,7 @@ void Conductor::sumar_puntos(unsigned int puntos){
 
 // COSTE O(1)
 void Conductor::restar_puntos(unsigned int puntos){
-	if (_puntos - puntos < 0) _puntos = 0;
+	if (puntos >= _puntos) _puntos = 0;
 	else _puntos -= puntos;	
 };
 
@@ -39,9 +40,7 @@ void Conductor::cambiar_posicion(const Posicion& posicion){
 
 // COSTE O(n)
 CarnetPorPuntos::CarnetPorPuntos(){
-	for (int i=0; i<=14; i++){
-		listas_puntos.inserta(i+1, Lista<string>());
-	}
+	listas_puntos.inserta(15, Lista<string>());
 };
  
 /**
@@ -84,6 +83,8 @@ void CarnetPorPuntos::quitar(const string& dni, unsigned int puntos) {
 
 	if (puntos_anteriores != it.valor().obtener_puntos()){
 		DiccionarioHash<int, Lista<string> >::Iterator it_lista = listas_puntos.busca(puntos_anteriores);
+		if (! listas_puntos.contiene(it.valor().obtener_puntos()))
+			listas_puntos.inserta(it.valor().obtener_puntos(), Lista<string>());
 		DiccionarioHash<int, Lista<string> >::Iterator it_lista_nueva = listas_puntos.busca(it.valor().obtener_puntos());
 		it_lista.valor().eliminar(it.valor().obtener_posicion());
 		it_lista_nueva.valor().pon_ppio(dni);
@@ -108,6 +109,8 @@ void CarnetPorPuntos::recuperar(const string& dni, unsigned int puntos) {
 
 	if (puntos_anteriores != it.valor().obtener_puntos()){
 		DiccionarioHash<int, Lista<string> >::Iterator it_lista = listas_puntos.busca(puntos_anteriores);
+		if (! listas_puntos.contiene(it.valor().obtener_puntos()))
+			listas_puntos.inserta(it.valor().obtener_puntos(), Lista<string>());
 		DiccionarioHash<int, Lista<string> >::Iterator it_lista_nueva = listas_puntos.busca(it.valor().obtener_puntos());
 		
 		it_lista.valor().eliminar(it.valor().obtener_posicion());
@@ -158,5 +161,8 @@ unsigned int CarnetPorPuntos::cuantos_con_puntos(unsigned int puntos) const {
 const Lista<string>& CarnetPorPuntos::lista_por_puntos(unsigned int puntos) const {
 	if (puntos < 0 || puntos > 15) throw EPuntosNoValidos();
 	DiccionarioHash<int, Lista<string> >::ConstIterator it = listas_puntos.cbusca(puntos);
-	return it.valor();
+	if (it != listas_puntos.cend())
+		return it.valor();
+	else
+		return Lista<string>();
 }
