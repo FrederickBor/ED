@@ -1,0 +1,7 @@
+an_surtidor 1=>OK
+carga 1 diesel 20=>OK
+carga 1 gasolina 30=>OK
+pon_en_espera v1 1=>OK
+pon_en_espera v2 1=>OK
+abandona v2=>OK
+vende 1 diesel 20=>VEHICULO:v1, QUEDAN: 0

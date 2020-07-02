@@ -1,0 +1,7 @@
+an_surtidor 1
+carga 1 diesel 20
+carga 1 gasolina 30
+pon_en_espera v1 1
+pon_en_espera v2 1
+abandona v2
+vende 1 diesel 20
