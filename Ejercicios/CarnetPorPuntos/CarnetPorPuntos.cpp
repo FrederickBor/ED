@@ -38,7 +38,7 @@ void Conductor::cambiar_posicion(const Posicion& posicion){
 	_posicion = posicion;
 };
 
-// COSTE O(n)
+// COSTE O(1)
 CarnetPorPuntos::CarnetPorPuntos(){
 	listas_puntos.inserta(15, Lista<string>());
 };
